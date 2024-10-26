@@ -369,3 +369,27 @@ main {
     color: #666;
   }
   
+  .logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.logo-container a {
+    flex: 1 1 calc(33.33% - 20px); /* Configura três itens por linha */
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.logo-container img {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
+.logo-description {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
