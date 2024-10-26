@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Informativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Portal Informativo Enchentes RS</h1>
+    <p>Verifique as áreas em risco e ações preventivas no Rio Grande do Sul.</p>
+
+    <!-- Botão de Menu -->
+    <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
+    <div class="menu" id="menu">
+        <a class="menu-link" href="index.html">Pagina Inicial</a>
+        <a class="menu-link" href="monitoramento.html">Sistema de monitoramento</a>
+        <a class="menu-link" href="preventiva.html">Prevenção e proteção</a>
+        <a class="menu-link" href="infraestrutura.html">Infraestrutura e Inovação</a>
+        <a class="menu-link" href="central.html">Central de Ajuda</a>
+        <a class="menu-link" href="vagas.html">Banco de Vagas</a>
+        <a class="menu-link" href="auxilio.html">Programas de auxílio</a>
+        <a class="menu-link" href="market.html">MarketPlace</a>
+    </div>
+</header>
+
+<!-- Seção do Mapa e Previsão do Tempo -->
+<nav>
+    <a href="#map">Mapa</a>
+    <a href="#legend">Legenda do mapa</a>
+    <a href="#mapas">Outros mapas</a>
+    <a href="#weather">Previsão do Tempo</a>
+    
+   
+</nav>
+<h2>Mapa de Áreas Afetadas com probabilidade de novas enchentes</h2>
+<div id="container">
+    <div id="map"></div>
+    
+</div>
+
+<!-- Legenda do Mapa -->
+<h2>Legenda</h2>
+<div id="legend">
+    <ul>
+        <li><span style="background-color: red; padding: 2px 5px;">&nbsp;</span> - Muito Alta Probabilidade</li>
+        <li><span style="background-color: orange; padding: 2px 5px;">&nbsp;</span> - Alta Probabilidade</li>
+        <li><span style="background-color: yellow; padding: 2px 5px;">&nbsp;</span> - Moderada Probabilidade</li>
+        <li><span style="background-color: lightgreen; padding: 2px 5px;">&nbsp;</span> - Baixa a Moderada Probabilidade</li>
+    </ul>
+</div>
+<h2>Previsão e precipitação das 15 cidades mais atingidas (semanal e quinzenal):</h2>
+<div>
+    <div class="topico" onclick="toggleConteudo('conteudo1')">Muçum </div>
+    <div id="conteudo1" class="conteudo">
+        <p>* Clima: Sol com algumas nuvens. 25°c<br>
+            * Umidade: 92%<br>
+            * precipitação:71mm/dia<br>
+            * Previção de Chuva: Dia 26<br>
+            <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/4451/mucum-rs">Clique aqui para visualizar a previsão quinzenal</a>
+            </p>
+    </div>
+</div>
+
+<div>
+    <div class="topico" onclick="toggleConteudo('conteudo2')">Lageado</div>
+    <div id="conteudo2" class="conteudo">
+        <p>* Clima: Sol com muitas nunvens. 25°c<br>
+            * Umidade: 83%<br>
+            * Precipitação: 53mm/dia<br>
+            * Previsão de chuva: Chuva no dia 26.<br>
+            <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/1399/lajeado-rs">Clique aqui para visualizar a previsão quinzenal</a>
+        </p>
+    </div>
+</div>
+
+<div>
+    <div class="topico" onclick="toggleConteudo('conteudo3')">Montenegro</div>
+    <div id="conteudo3" class="conteudo">
+        <p>* Clima: Sol com algumas nunvens. 25°c<br>
+            * Umidade: 88%<br>
+            * Precipitação: 58mm/dia<br>
+            * Previsão de chuva: Dia 26.<br>
+            <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/3155/montenegro-rs">Clique aqui para visualizar a previsão quinzenal</a> </p>   
+    </div>   
+</div>
+
+<div>
+    <div class="topico" onclick="toggleConteudo('conteudo4')">Encantado</div>
+    <div id="conteudo4" class="conteudo">
+        <p>* Clima: Sol com algumas nunvens: 25°c<br>
+            * Umidade: 92%<br>
+            * Precipitação: 71mm/dia <br>
+            *Previsão de chuva: Dia 26<br>
+            <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/3339/encantado-rs">Clique aqui para visualizar a previsão quinzenal</a></p> 
+
+    </div>
+</div>
+
+<div>
+    <div class="topico" onclick="toggleConteudo('conteudo5')">Estrela</div>
+    <div id="conteudo5" class="conteudo">
+        <p>* Clima: Sol com muitas nunvens.25°c<br>
+            * Umidade: 83%<br>
+            * Precipitação: 53mm/dia<br>
+            * Previsão de chuva: Dia 03<br>
+            <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/1388/estrela-rs">Clique aqui para visualizar a previsão quinzenal</a></p> 
+            </p>
+    </div>
+</div>
+
+<div>
+    <div class="topico" onclick="toggleConteudo('conteudo6')">Roca Sales</div>
+    <div id="conteudo6" class="conteudo">
+        <p>* Clima: Nublado pela manhã. 25°c<br>
+            * Umidade: 89%<br>
+            * Precipitação: 71mm/dia<br>
+            * Previsão de chuva: Chuva no dia 29<br>
+            <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/4491/rocasales-rs">Clique aqui para visualizar a previsão quinzenal</a></p> 
+            </p>
+    </div>
+</div>
+
+<div>
+    <div class="topico" onclick="toggleConteudo('conteudo7')">Cruzeiro do Sul</div>
+    <div id="conteudo7" class="conteudo">
+        <p>* Clima: Sol com muitas nunves. 25°c<br>
+            * Umidade: 83%<br>
+            *Precipitação: 53mm/dia<br>
+            *Previsão de chuva: Chuva no dia 03<br>
+            <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/4388/cruzeirodosul-rs">Clique aqui para visualizar a previsão quinzenal</a></p> 
+            </p>
+    </div>
+</div>
+
+<div>
+    <div class="topico" onclick="toggleConteudo('conteudo8')">Taquari</div>
+    <div id="conteudo8" class="conteudo">
+        <p>* Clima: Sol com muitas nunvens.25°c<br>
+            * Umidade: 88%<br>
+            * Precipitação: 57mm/dia<br>
+            * Previsão de chuva: Chuva no dia 04<br>
+            <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/1422/taquari-rs">Clique aqui para visualizar a previsão quinzenal</a></p> 
+            </p>
+    </div>
+</div>
+
+<div>
+    <div class="topico" onclick="toggleConteudo('conteudo9')">Novo Hamburgo</div>
+    <div id="conteudo9" class="conteudo">
+        <p>* Clima: Sol com pancadas de chuvas. 25°c<br>
+            *Umidade: 90%<br>
+            * Precipitação: 65mm/dia<br>
+            * Previsão de chuva: Chuva no dia 03<br>
+            <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/360/novohamburgo-rs">Clique aqui para visualizar a previsão quinzenal</a></p> 
+            </p>
+    </div>
+</div>
+
+<div>
+    <div class="topico" onclick="toggleConteudo('conteudo10')">Gravatai</div>
+    <div id="conteudo10" class="conteudo">
+        <p>* Clima: Sol com muitas nunvens. 25°c<br>
+            * Umidade: 91%<br>
+            * Precipitação: 60mm/dia<br>
+            * Previsão de chuva: Chuva no dia 30.<br>
+            <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/357/gravatai-rs">Clique aqui para visualizar a previsão quinzenal</a></p> 
+            </p>
+    </div>
+</div>
+
+<div>
+    <div class="topico" onclick="toggleConteudo('conteudo11')">Santa Maria</div>
+    <div id="conteudo11" class="conteudo">
+        <p>* Clima: Dia nublado. 25°c<br>
+            * Umidade: 89%<br>
+            * Precitação: 54mm/dia<br>
+            * Previsão de chuva: Chuva no dia 31<br>
+            <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/366/santamaria-rs">Clique aqui para visualizar a previsão quinzenal</a></p> 
+            </p>
+    </div>
+</div>
+
+<div>
+    <div class="topico" onclick="toggleConteudo('conteudo12')">Passo Fundo</div>
+    <div id="conteudo12" class="conteudo">
+        <p>* Clima: Muitas nunvens o dia todo. 25°c<br>
+            * Umidade: 98%<br>
+            * Precipitação:75mm/dia<br>
+            * Previsão de chuva: Chuva no dia 03<br>
+            <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/361/passofundo-rs">Clique aqui para visualizar a previsão quinzenal</a></p> 
+            </p>
+    </div>
+</div>
+
+<div>
+    <div class="topico" onclick="toggleConteudo('conteudo13')">Caxias do Sul</div>
+    <div id="conteudo13" class="conteudo">
+        <p>* Clima: Sol com muitas nunvens. 25°c<br>
+            * Umidade: 99%<br>
+            * Precipitação: 81mm/dia<br>
+            * Previsão de chuca: Chuva no dia 29<br>
+            <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/353/caxiasdosul-rs">Clique aqui para visualizar a previsão quinzenal</a></p> 
+            </p>
+    </div>
+</div>
+
+<div>
+    <div class="topico" onclick="toggleConteudo('conteudo14')">Porto Alegre</div>
+    <div id="conteudo14" class="conteudo">
+        <p>* Clima: Sol com muitas nunvens.<br>
+            * Umidade: 88%<br>
+            * Precipitação: 58mm/dia<br>
+            * Previsão de chuva: Chuva dia 26<br>
+            <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/363/portoalegre-rs">Clique aqui para visualizar a previsão quinzenal</a></p> 
+            </p>
+    </div>
+</div>
+
+<div>
+    <div class="topico" onclick="toggleConteudo('conteudo15')">Erechim</div>
+    <div id="conteudo15" class="conteudo">
+        <p>* Clima: Sol com muitas nunvens. 25°c<br>
+            * Umidade: 100%<br>
+            * Precipitação: 69mm/dia<br>
+            * Previsão de chuva: Chuva no dia 03.<br>
+            <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/1516/erechim-rs">Clique aqui para visualizar a previsão quinzenal</a></p> 
+            </p>
+    </div>
+</div>
+<h2 style="text-align: left;">Outros mapas externos:</h2>
+<div id="mapas"></div>
+<ul>
+    <li><a href="https://mup.rs.gov.br/">Mapa Único Plano Rio Grande do Sul</a></li>
+    <li><a href="https://storymaps.arcgis.com/stories/02d01e5f3a2b423893a2b2560fa8ecce">Mapa Impactos das cheias de maio de 2024 em Porto Alegre | RS</a></li>
+    <li><a href="https://www.cnnbrasil.com.br/nacional/enchente-no-rs-mapas-interativos-mostram-locais-afetados-pela-chuva-veja/">Mapa de afetividade pública (desaparecimentos, mortes, feridos)</a></li>
+    <li><a href="https://codexremote.maps.arcgis.com/home/webscene/viewer.html?webscene=979036d4b4d34402aa732a1262aeb947">Mapa dos caminhos percorridos pela enchente</a></li>
+    <li><a href="https://codexremote2.eastus.cloudapp.azure.com/portal/apps/webappviewer/index.html?id=3d14784c4f904973aa543d1a2e75226b">Mapa dos bairros afetados de Porto Alegre</a></li>
+    <li><a href="https://educacao.rs.gov.br/mapa-do-retorno">Mapa do Retorno - status de funcionamento das instituições de ensino</a></li>
+    <li><a href="https://www.sgb.gov.br/sace/">SACE - Sistema de Alerta de Eventos Críticos</a></li>
+    <li><a href="https://www.snirh.gov.br/hidrotelemetria/ultimosDados.aspx">ANA - Agência Nacional das Águas (Rede Hidrometeorológica Nacional)</a></li>
+</ul>
+
+<!-- Seção de Dados Adicionais -->
+
+<footer>
+    <p>&copy; 2024 Portal Informativo sobre Enchentes Rio Grande do Sul</p>
+</footer>
+
+<!-- Google Maps API Script (com sua chave de API) -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuVDiyyuExuVYrUDt78uzWkVcRjUhj81s&callback=initMap" async defer></script>
+
+<!-- Script para buscar dados de clima e interações com o mapa -->
+<script src="script.js"></script>
+
+</body>
+</html>

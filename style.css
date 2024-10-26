@@ -1,0 +1,371 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+header {
+    background-image: url('banner2.jpg'); /* Altere para o caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área do header */
+    background-position: center; /* Centraliza a imagem no header */
+    color: white;
+    padding: 7px;
+    text-align: center;
+    
+}
+#map-container {
+height: 300px;
+background-color: lightgray;
+margin: 20px;
+text-align: center;
+}
+#insights {
+padding: 20px;
+}
+footer {
+background-color: #575757;
+color: white;
+text-align: center;
+padding: 10px;
+}
+
+/* Definindo a altura do mapa e o layout geral */
+#container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+}
+
+#weather {
+    width: 0%;
+    padding: 10px;
+    border-left: 1px solid #ccc;
+}
+
+/* Estilo da legenda */
+#legend {
+    background: white;
+    padding: 10px;
+    margin: 10px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    border: 1px solid black;
+}
+
+/* Estilo para a seção de dados adicionais */
+#additionalData {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+/* LOGO DA PAGINA INICIAL: */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto:wght@400&display=swap');
+
+.logo-container {
+    text-align: center;
+}
+
+.logo-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo-container img {
+    max-width: 150px; /* Tamanho da imagem ajustável */
+}
+
+.logo-description {
+    font-family: 'Poppins', sans-serif; /* Fonte elegante */
+    font-size: 18px; /* Tamanho maior para destaque */
+    font-weight: 500; /* Negrito suave */
+    color: rgb(57, 83, 226); /* Azul suave */
+    margin-top: 10px; /* Espaçamento entre logo e descrição */
+    letter-spacing: 0.5px; /* Espaçamento entre letras */
+    text-transform: uppercase; /* Colocar o texto em maiúsculas para estilo */
+    transition: color 0.3s ease; /* Efeito suave de transição de cor */    
+}
+.logo-description:hover {
+    color: rgb(255, 69, 0); /* Cor laranja ao passar o mouse */
+}
+/* FIM DO AJUSTE DA LOGO MENU */
+/*CSS pra titulos: */
+h2 {
+    color: blue;
+    text-align: center;
+    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', sans-serif;
+}
+
+
+.data-section {
+    margin-bottom: 15px;
+}
+
+header {
+    display: flex; /* Usando flexbox para o cabeçalho */
+    flex-direction: column; /* Alinhando itens verticalmente */
+    align-items: left; /* Centraliza os itens horizontalmente no cabeçalho */
+    position: relative;
+    height: 250px; /* Altura do cabeçalho */
+    overflow: visible; /* Oculta as partes da imagem que não cabem no cabeçalho */
+    text-align: center;
+}
+
+header h1,
+header p {
+    position: relative; /* Para que o texto fique acima do fundo */
+    z-index: 1; /* Garante que o texto fique acima de outros elementos */
+}
+
+header h1 {
+    color: white; /* Cor do título */
+    font-size: 2.5em; /* Tamanho do título */
+    font-weight: bold; /* Aumenta a espessura do texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adiciona sombra ao título */
+}
+
+header p {
+    color: white; /* Cor da descrição */
+    font-size: 1.2em; /* Tamanho da descrição */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Adiciona sombra à descrição */
+}
+
+/* Fundo semitransparente */
+header::before {
+    content: ""; /* Cria um pseudo-elemento */
+    position: absolute; /* Para preencher todo o cabeçalho */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo preto com opacidade */
+    z-index: 0; /* Coloca atrás do texto */
+}
+
+/* Adicionando a imagem de fundo */
+header {
+    background-image: url('banner2.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o cabeçalho */
+    background-position: center; /* Centraliza a imagem */
+}
+
+nav {
+    background-color: #333; /* Cor de fundo do menu */
+    overflow: hidden; /* Para ocultar conteúdo que ultrapasse */
+    display: flex; /* Permite que o nav ajuste a largura ao conteúdo */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    padding: 10px; /* Adiciona algum espaçamento interno */
+    margin-top: 10px; /* Espaço entre o cabeçalho e o menu */
+    z-index: 10; /* Coloca o cabeçalho atrás do menu */
+}
+
+nav a {
+    color: #f2f2f2; /* Cor dos links */
+    padding: 14px 16px; /* Espaçamento interno dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 17px; /* Tamanho da fonte */
+}
+
+/* Efeito de hover */
+nav a:hover {
+    background-color: #575757; /* Altera a cor de fundo ao passar o mouse */
+    color: #ffffff; /* Altera a cor do texto ao passar o mouse */
+}
+
+/* Estilos do contêiner do menu */
+.menu-container {
+    position: relative; /* Permite que o menu seja posicionado em relação ao contêiner */
+}
+
+/* Estilos do botão de menu */
+.menu-button {
+    position: absolute; /* Permite que o botão seja posicionado em relação ao cabeçalho */
+    top: -5px; /* Distância do topo do cabeçalho */
+    left: 10px; /* Distância da esquerda do cabeçalho */
+    z-index: 20; /* Garante que o botão fique na frente dos outros elementos */
+    cursor: pointer;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+    display: block; /* Garante que o botão seja exibido como um bloco */
+    text-align: left; /* Alinha o texto do botão à esquerda */
+    overflow: visible; /* Garante que o menu não seja cortado */
+}
+
+/* Estilos do menu dropdown */
+.menu {
+    display: none; /* Inicialmente escondido */
+    flex-direction: column;
+    background-color: #007BFF;
+    border: 10px solid #ccc;
+    border-radius: 5px;
+    margin-top: 0px;
+    width: fit-content; /* Faz o menu ajustar-se ao conteúdo */
+    position: absolute; /* Faz com que o menu apareça sobre os elementos */
+    z-index: 100; /* Garante que o menu fique sobre outros elementos */
+    top: 20px; /* Posiciona o menu logo abaixo do botão */
+    left: 88px; /* Alinha o menu à esquerda, conforme o botão */
+    overflow: visible; /* Garante que o menu não seja cortado */
+}
+
+/* Mostrar o menu quando o mouse estiver sobre o contêiner do menu */
+.menu-container:hover .menu {
+    display: flex; /* Exibe o menu ao passar o mouse sobre o botão ou o menu */
+}
+
+/* Estilos dos links do menu */
+.menu-link {
+    padding: 10px;
+    text-decoration: none;
+    color: #fdfdfd;
+    transition: transform 0.2s, background-color 0.3s;
+    white-space: nowrap; /* Impede a quebra de linha nos links */
+    border-bottom: 5px solid #ccc; /* Borda entre os links */
+}
+
+.menu-link:hover {
+    transform: scale(1.05);
+    background-color: #007BFF;
+}
+/* Para as vagas:*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu-vaga {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu-vaga button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column; /* Coloca os botões um embaixo do outro */
+    gap: 10px;              /* Espaço entre os botões */
+}
+
+.menu-vaga button:hover {
+    background-color: #0056b3;
+}
+
+.vagas {
+    display: none;
+    margin-top: 20px;
+}
+
+.vaga {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.vaga h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.vaga p {
+    margin: 5px 0;
+}
+
+.vaga strong {
+    color: #007bff;
+}
+
+.active {
+    display: block;
+}
+ /* Estilo para os tópicos */
+ .topico {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/* Conteúdo oculto */
+.conteudo {
+    display: none;
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin-top: 5px;
+}
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #007bff;
+  }
+  
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    display: none; /* Escondido por padrão */
+  }
+  
+  .product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: calc(33.33% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .product h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .product p {
+    font-size: 14px;
+    color: #666;
+  }
+  

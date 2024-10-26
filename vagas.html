@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Informativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Portal Informativo Enchentes RS</h1>
+    <p>Verifique as áreas em risco e ações preventivas no Rio Grande do Sul.</p>
+
+    <!-- Botão de Menu -->
+    <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
+    <div class="menu" id="menu">
+        <a class="menu-link" href="index.html">Pagina Inicial</a>
+        <a class="menu-link" href="monitoramento.html">Sistema de monitoramento</a>
+        <a class="menu-link" href="preventiva.html">Prevenção e proteção</a>
+        <a class="menu-link" href="infraestrutura.html">Infraestrutura e Inovação</a>
+        <a class="menu-link" href="central.html">Central de Ajuda</a>
+        <a class="menu-link" href="vagas.html">Banco de Vagas</a>
+        <a class="menu-link" href="auxilio.html">Programas de auxílio</a>
+        <a class="menu-link" href="market.html">MarketPlace</a>
+    </div>
+</header>
+<h3>Se você tiver uma vaga para ofertar às pessoas, exclusivamente afetadas pela enchente:
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScxexp4dOwh3T7A9f_z2F0qUMNKSlI6-USPMa4LdYe6TygjHQ/viewform?usp=sf_link">Clique aqui para cadastrar uma nova vaga!</a></h3>
+<h1>Vagas de Trabalho</h1>
+
+<div class="menu-vaga">
+    <button onclick="showVagas('porto-alegre')">Porto Alegre</button>
+    <button onclick="showVagas('santa-maria')">Santa Maria</button>
+    <button onclick="showVagas('passo-fundo')">Passo Fundo</button>
+    <button onclick="showVagas('lajeado')">Lajeado</button>
+    <button onclick="showVagas('caxias-do-sul')">Caxias do Sul</button>
+</div>
+
+<!-- Porto Alegre -->
+<div id="porto-alegre" class="vagas">
+    <div class="vaga">
+        <h3>Auxiliar de Serviços Gerais</h3>
+        <p><strong>Local:</strong> Porto Alegre</p>
+        <p><strong>Descrição:</strong> Responsável por limpeza e organização de ambientes, recolhimento de lixo e auxílio em pequenas manutenções.</p>
+        <p><strong>Requisitos:</strong> Ensino fundamental completo. Disponibilidade para trabalhar em horários alternados.</p>
+        <p><strong>Salário:</strong> R$ 1.500 a R$ 1.800</p>
+        <p><strong>Empresa:</strong> Limpeza Express Porto</p>
+        <p><strong>Contato:</strong> (51) 9999-1234</p>
+    </div>
+
+    <div class="vaga">
+        <h3>Ajudante de Cozinha</h3>
+        <p><strong>Local:</strong> Porto Alegre</p>
+        <p><strong>Descrição:</strong> Auxiliar no preparo de refeições, limpeza da cozinha, corte de legumes e organização de insumos.</p>
+        <p><strong>Requisitos:</strong> Ensino fundamental completo. Experiência prévia será um diferencial.</p>
+        <p><strong>Salário:</strong> R$ 1.400 a R$ 1.700</p>
+        <p><strong>Empresa:</strong> Restaurante Sabor Gaúcho</p>
+        <p><strong>Contato:</strong> (51) 9988-5678</p>
+    </div>
+</div>
+
+<!-- Santa Maria -->
+<div id="santa-maria" class="vagas">
+    <div class="vaga">
+        <h3>Repositor de Mercadorias</h3>
+        <p><strong>Local:</strong> Santa Maria</p>
+        <p><strong>Descrição:</strong> Reposição de produtos nas prateleiras, organização do estoque e controle de validade.</p>
+        <p><strong>Requisitos:</strong> Ensino fundamental completo. Boa disposição física.</p>
+        <p><strong>Salário:</strong> R$ 1.300 a R$ 1.600</p>
+        <p><strong>Empresa:</strong> Supermercado Bom Preço</p>
+        <p><strong>Contato:</strong> (55) 9966-1122</p>
+    </div>
+
+    <div class="vaga">
+        <h3>Atendente de Padaria</h3>
+        <p><strong>Local:</strong> Santa Maria</p>
+        <p><strong>Descrição:</strong> Atendimento ao cliente, organização de vitrines, corte e embalagem de pães e bolos.</p>
+        <p><strong>Requisitos:</strong> Ensino fundamental completo. Habilidade com atendimento ao público.</p>
+        <p><strong>Salário:</strong> R$ 1.350 a R$ 1.550</p>
+        <p><strong>Empresa:</strong> Padaria Delícias do Pão</p>
+        <p><strong>Contato:</strong> (55) 9977-3344</p>
+    </div>
+</div>
+
+<!-- Passo Fundo -->
+<div id="passo-fundo" class="vagas">
+    <div class="vaga">
+        <h3>Carregador de Armazém</h3>
+        <p><strong>Local:</strong> Passo Fundo</p>
+        <p><strong>Descrição:</strong> Carregar e descarregar mercadorias, organizar o estoque e auxiliar na movimentação de cargas.</p>
+        <p><strong>Requisitos:</strong> Ensino fundamental completo. Capacidade física para serviços pesados.</p>
+        <p><strong>Salário:</strong> R$ 1.500 a R$ 1.800</p>
+        <p><strong>Empresa:</strong> Armazém Central de Passo Fundo</p>
+        <p><strong>Contato:</strong> (54) 9988-5566</p>
+    </div>
+
+    <div class="vaga">
+        <h3>Auxiliar de Jardinagem</h3>
+        <p><strong>Local:</strong> Passo Fundo</p>
+        <p><strong>Descrição:</strong> Auxiliar na manutenção de jardins, corte de grama, plantio e cuidados com flores e plantas.</p>
+        <p><strong>Requisitos:</strong> Ensino fundamental completo. Interesse por jardinagem.</p>
+        <p><strong>Salário:</strong> R$ 1.250 a R$ 1.500</p>
+        <p><strong>Empresa:</strong> Verde Viver Paisagismo</p>
+        <p><strong>Contato:</strong> (54) 9977-4455</p>
+    </div>
+</div>
+
+<!-- Lajeado -->
+<div id="lajeado" class="vagas">
+    <div class="vaga">
+        <h3>Entregador de Motoboy</h3>
+        <p><strong>Local:</strong> Lajeado</p>
+        <p><strong>Descrição:</strong> Fazer entregas de produtos diversos, realizar rotas e assegurar a entrega em tempo hábil.</p>
+        <p><strong>Requisitos:</strong> Ensino fundamental completo. CNH categoria A.</p>
+        <p><strong>Salário:</strong> R$ 1.400 a R$ 1.700 + ajuda de custo</p>
+        <p><strong>Empresa:</strong> Rápido Express Lajeado</p>
+        <p><strong>Contato:</strong> (51) 9966-7788</p>
+    </div>
+
+    <div class="vaga">
+        <h3>Auxiliar de Produção</h3>
+        <p><strong>Local:</strong> Lajeado</p>
+        <p><strong>Descrição:</strong> Atuar na linha de produção de fábrica, realizando montagem, embalagem e separação de produtos.</p>
+        <p><strong>Requisitos:</strong> Ensino fundamental completo. Agilidade e atenção aos detalhes.</p>
+        <p><strong>Salário:</strong> R$ 1.500 a R$ 1.750</p>
+        <p><strong>Empresa:</strong> Fábrica Têxtil Lajeado</p>
+        <p><strong>Contato:</strong> (51) 9988-2233</p>
+    </div>
+</div>
+
+<!-- Caxias do Sul -->
+<div id="caxias-do-sul" class="vagas">
+    <div class="vaga">
+        <h3>Auxiliar de Carga e Descarga</h3>
+        <p><strong>Local:</strong> Caxias do Sul</p>
+        <p><strong>Descrição:</strong> Realizar a carga e descarga de caminhões, organizar mercadorias no depósito e auxiliar na separação de pedidos.</p>
+        <p><strong>Requisitos:</strong> Ensino fundamental completo. Boa disposição física.</p>
+        <p><strong>Salário:</strong> R$ 1.450 a R$ 1.700</p>
+        <p><strong>Empresa:</strong> Transportadora Sul Cargo</p>
+        <p><strong>Contato:</strong> (54) 9966-9988</p>
+    </div>
+
+    <div class="vaga">
+        <h3>Auxiliar de Limpeza</h3>
+        <p><strong>Local:</strong> Caxias do Sul</p>
+        <p><strong>Descrição:</strong> Realizar a limpeza e organização de escritórios, salas e áreas comuns. Manter os ambientes limpos e higienizados.</p>
+        <p><strong>Requisitos:</strong> Ensino fundamental completo. Experiência com limpeza será um diferencial.</p>
+        <p><strong>Salário:</strong> R$ 1.300 a R$ 1.500</p>
+        <p><strong>Empresa:</strong> ServClean Caxias</p>
+        <p><strong>Contato:</strong> (54) 9977-8877</p>
+    </div>
+</div>
+
+
+
+<footer>
+    <p>&copy; 2024 Portal Informativo sobre Enchentes Rio Grande do Sul</p>
+</footer>
+
+
+<!-- Script para chamar o javascript -->
+<script src="script.js"></script>
+</body>
+</html>

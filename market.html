@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Informativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Market Place</h1>
+    <p>Auxiliando na recuperação do comércio no RS.</p>
+
+    <!-- Botão de Menu -->
+    <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
+    <div class="menu" id="menu">
+        <a class="menu-link" href="index.html">Pagina Inicial</a>
+        <a class="menu-link" href="monitoramento.html">Sistema de monitoramento</a>
+        <a class="menu-link" href="preventiva.html">Prevenção e proteção</a>
+        <a class="menu-link" href="infraestrutura.html">Infraestrutura e Inovação</a>
+        <a class="menu-link" href="central.html">Central de Ajuda</a>
+        <a class="menu-link" href="vagas.html">Banco de Vagas</a>
+        <a class="menu-link" href="auxilio.html">Programas de auxílio</a>
+    </div>
+</header>
+<div>
+  <div class="topico" onclick="toggleConteudo('conteudo1')">Cadastre um produto para doação </div>
+  <div id="conteudo1" class="conteudo">
+      <p>Preencha o formulario clicando no link abaixo<br>
+          <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/4451/mucum-rs">Formulario do produto</a>
+          </p>
+  </div>
+</div>
+
+<div>
+  <div class="topico" onclick="toggleConteudo('conteudo2')">Cadastre um produto para o Market Aberto</div>
+  <div id="conteudo2" class="conteudo">
+    <p>Preencha o formulario clicando no link abaixo<br>
+      <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/4451/mucum-rs">Formulario do produto</a>
+      
+      </p>
+  </div>
+</div>
+
+<div>
+  <div class="topico" onclick="toggleConteudo('conteudo3')">Se torne um lojista conveniado! Clique aqui</div>
+  <div id="conteudo3" class="conteudo">
+      <p>Preencha as informaçoes do formulario<br>
+        Apresente os documentos necessários<br>
+        Aguarde o nosso contato para confirmar sua inscrição! Link do formulário abaixo: <br>
+          <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/3155/montenegro-rs">Formulário e documentação</a> </p>   
+  </div>   
+</div>
+<div>
+  <div class="topico" onclick="toggleConteudo('conteudo4')">Saiba se você é elegível ao crédito emergencial e tenha acesso aos produtos de Lojistas Conveniados</div>
+  <div id="conteudo4" class="conteudo">
+      <p>Preencha as informaçoes do formulario<br>
+        Apresente os documentos necessários<br>
+        Aguarde o nosso contato para confirmar sua inscrição! Link do formulário abaixo: <br>
+          <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/3155/montenegro-rs">Formulário e documentação</a> </p>   
+  </div>   
+</div>
+
+
+
+<main>
+    <!-- Seção de Doações -->
+    <section>
+      <h2 onclick="toggleCategory('doacoes')">Doações</h2>
+      <div id="doacoes" class="product-container">
+        <!-- Produtos 1 a 10 para Doações -->
+        <div class="product">
+          <img src="colchao.jpg" alt="Produto 1">
+          <h3>Colchão de casal</h3>
+          <p>Cidade: Porto Alegre <br>
+            Estado do produto: Usado<br>
+            Observação:Retirar no bairro Mirasol</p>
+        </div>
+        <div class="product">
+          <img src="colchao.jpg" alt="Produto 1">
+          <h3>Colchão de casal</h3>
+          <p>Cidade: Porto Alegre <br>
+            Estado do produto: Usado<br>
+            Observação:Retirar no bairro Mirasol</p>
+        </div>
+        <!-- Adicione os outros produtos com a mesma estrutura até o produto 10 -->
+      </div>
+    </section>
+
+    <!-- Seção de Produtos de Lojistas -->
+    <section>
+      <h2 onclick="toggleCategory('lojistas')">Produtos de Lojistas Conveniados</h2>
+      <div id="lojistas" class="product-container">
+        <!-- Produtos 1 a 10 para Lojistas Conveniados -->
+        <div class="product">
+          <img src="images/lojista1.jpg" alt="Produto 1">
+          <h3>Produto 1</h3>
+          <p>Descrição básica do Produto 1 - Lojista</p>
+        </div>
+        <!-- Adicione os outros produtos com a mesma estrutura até o produto 10 -->
+      </div>
+    </section>
+
+    <!-- Seção de Market Geral -->
+    <section>
+      <h2 onclick="toggleCategory('market')">Market Geral Aberto</h2>
+      <div id="market" class="product-container">
+        <!-- Produtos 1 a 10 para Market Geral -->
+        <div class="product">
+          <img src="images/market1.jpg" alt="Produto 1">
+          <h3>Produto 1</h3>
+          <p>Descrição básica do Produto 1 - Market</p>
+        <!-- Adicione os outros produtos com a mesma estrutura até o produto 10 -->
+      </div>
+      <div class="product">
+        <img src="images/market1.jpg" alt="Produto 1">
+        <h3>Produto 1</h3>
+        <p>Descrição básica do Produto 1 - Market</p>
+      <!-- Adicione os outros produtos com a mesma estrutura até o produto 10 -->
+    </div>
+    <div class="product">
+      <img src="images/market1.jpg" alt="Produto 1">
+      <h3>Produto 1</h3>
+      <p>Descrição básica do Produto 1 - Market</p>
+    <!-- Adicione os outros produtos com a mesma estrutura até o produto 10 -->
+  </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Protótipo de Marketplace - Desenvolvido para demonstração</p>
+  </footer>
+
+  <!-- Script para exibir ou ocultar as seções -->
+  <script>
+    function toggleCategory(categoryId) {
+      const category = document.getElementById(categoryId);
+      category.style.display = category.style.display === 'none' ? 'flex' : 'none';
+    }
+  </script>
+<script src="script.js"></script>
+</body>
+</html>
